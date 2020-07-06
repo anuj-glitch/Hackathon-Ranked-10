@@ -19,7 +19,12 @@ for data desciption, there are three files:
 
  - train.csv: It contains the set of 13 challenges that were attempted by the same user in a sequence.
  - challenge_data.csv: Contains attributes related to each challenge
+ 
+![](https://https://github.com/anuj-glitch/Recommendation-system-Hackathon-Ranked-10/blob/master/data_description1.jpg)
+
  - test.csv: Contains the first 10 challenges solved by a new user set (not in train) in the test set. We need to predict
+ 
+![](https://https://github.com/anuj-glitch/Recommendation-system-Hackathon-Ranked-10/blob/master/data_description2.jpg)
 
 ## Evaluation Metric
  - The evaluation metric is Mean Average Precision (MAP) at K (K = 3). MAP is a well-known metric used to evaluate ranked retrieval results. E.g. Let’s say for a given user, we recommended 3 challenges and only 1st and 3rd challenges are correct. So, the result would look like — 1, 0, 1

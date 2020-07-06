@@ -28,7 +28,7 @@ for data desciption, there are three files:
 
  - In this case, The precision at 1 will be: 11/1 = 1 The precision at 2 will be: 01/2 The precision at 3 will be: 1*2/3 = 0.67 Average Precision will be: (1 + 0 + 0.67)/3 = 0.556.
 
-## Solution:
+## Solution approach:
 - Approached as a Text Generation Problem; where a sequence of words is used to predict the next word
 - Each user in the training set was replicated 3 times, i.e. sequence of the 10 challenges solved and their three labels (for 11th, 12th and 13th challenges).
 - All the challenges were label encoded

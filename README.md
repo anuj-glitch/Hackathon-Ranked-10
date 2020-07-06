@@ -1,4 +1,4 @@
-# Recommendation-system-Hackathon-Ranked-10
+# Analytics Vidhya Janatahack: Recommendation system
 
 ### Ranked 10 out of 12,010 registered users in the Recommendation system Hackathon organized in Analytics Vidhya.
 
@@ -27,3 +27,14 @@ for data desciption, there are three files:
  - The evaluation metric is Mean Average Precision (MAP) at K (K = 3). MAP is a well-known metric used to evaluate ranked retrieval results. E.g. Let’s say for a given user, we recommended 3 challenges and only 1st and 3rd challenges are correct. So, the result would look like — 1, 0, 1
 
  - In this case, The precision at 1 will be: 11/1 = 1 The precision at 2 will be: 01/2 The precision at 3 will be: 1*2/3 = 0.67 Average Precision will be: (1 + 0 + 0.67)/3 = 0.556.
+
+## Solution:
+- Approached as a Text Generation Problem; where a sequence of words is used to predict the next word
+- Each user in the training set was replicated 3 times, i.e. sequence of the 10 challenges solved and their three labels (for 11th, 12th and 13th challenges).
+- All the challenges were label encoded
+- Now we had a multiclassification problem with 5606 classes and around 200k observations
+- The classification is done using BiDirectional LSTM. This model was optimised (size of embedding was tuned)
+- Further we tried using BiDirectional GRU. Here as well, embedding sizes were tuned.
+- Finally we ensembled 6 models (3 LSTM with different embedding size & 3 GRU with different embedding sizes)
+- During test time, we obtained a probability distribution for each sequence. Then, chose top-3 argmax probabilities as 11th, 12th and 13th challenges predicted.
+

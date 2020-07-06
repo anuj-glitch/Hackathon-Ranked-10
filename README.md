@@ -1,8 +1,6 @@
 # Analytics Vidhya Janatahack: Recommendation system
 
-### Ranked 10 out of 12,010 registered users in the Recommendation system Hackathon organized in Analytics Vidhya.
-
-
+### Rank 10 Solution for Recommendation system Hackathon, organized in Analytics Vidhya.
 
 ![](https://github.com/anuj-glitch/Recommendation-system-Hackathon-Ranked-10/blob/master/submission.PNG)
 
@@ -36,3 +34,5 @@ for data desciption, there are three files:
 - The classification is done using BiDirectional LSTM. This model was optimised (size of embedding was tuned)
 - During test time, we obtained a probability distribution for each sequence. Then, chose top-3 argmax probabilities as 11th, 12th and 13th challenges predicted.
 
+## Competition Result
+Rank: 10th on public LB and 10th on private LB

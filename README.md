@@ -1,6 +1,8 @@
 # Analytics Vidhya Janatahack: Recommendation system
 
 ### Rank 10 Solution for Recommendation system Hackathon, organized in Analytics Vidhya.
+### Link to LeaderBoard - 
+(https://datahack.analyticsvidhya.com/contest/janatahack-recommendation-systems/#LeaderBoard)
 
 ![](https://github.com/anuj-glitch/Recommendation-system-Hackathon-Ranked-10/blob/master/submission.PNG)
 
